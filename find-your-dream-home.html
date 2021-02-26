@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="Description"
+			content="Tampa Realty Service is a place where home buyers and sellers can find their dream home or list their home for the highest market value. Daniel Acevedo is the name, real estate is his game. On this website, you can browse the current and active listings, view the sold homes, perform an advanced search like an agent, ask Daniel to find the right home for you, calculate your mortgage, list your home, find your house's value, browse the local schools, view the walk score, or learn more about Daniel. Contact your Tampa real estate agent today!"
+		/>
+		<meta
+			name="Keywords"
+			content="real estate mortgage sale walk score school agent search browse current active listings house home real state value Florida Tampa Bay sold market invest investment refinance broker best Cooperative Real Estate"
+		/>
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Find Your Dream Home | Tampa Realty Service</title>
+		<!-- Bootstrap -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Questrial"
+			rel="stylesheet"
+		/>
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link href="css/default-styles.css" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Arsenal"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Fjalla+One"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Playball"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Homenaje|Overpass+Mono"
+			rel="stylesheet"
+		/>
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<nav id="fixedNav" class="navbar navbar-fixed-top darkBG">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="/"
+						><img class="logos" src="img/mainlogo-white.gif" alt=""
+					/></a>
+					<a href="/"
+						><img
+							class="logos"
+							src="img/mainlogo-colored.png"
+							style="display: none"
+					/></a>
+					<button
+						id="nav-button"
+						type="button"
+						class="collapsed navbar-toggle"
+						data-toggle="collapse"
+						data-target="#navlist"
+					>
+						<span class="glyphicon glyphicon-align-justify"></span>
+					</button>
+				</div>
+				<!-- end of navbar-header -->
+
+				<div id="navlist" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="/">HOME</a></li>
+						<li class="dropdown">
+							<a
+								href=""
+								class="dropdown-toggle"
+								data-toggle="dropdown"
+								role="button"
+								aria-haspopup="true"
+								aria-expanded="false"
+								>LISTINGS<span class="caret"></span
+							></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="/active-listings.html"
+										>ACTIVE LISTINGS</a
+									>
+								</li>
+								<li>
+									<a href="/sold.html">SOLD PROPERTIES</a>
+								</li>
+							</ul>
+						</li>
+						<li><a href="/search.html">SEARCH</a></li>
+						<li class="dropdown">
+							<a
+								href=""
+								class="dropdown-toggle"
+								data-toggle="dropdown"
+								role="button"
+								aria-haspopup="true"
+								aria-expanded="false"
+								>BUYERS<span class="caret"></span
+							></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="/find-your-dream-home.html"
+										>FIND YOUR DREAM HOME</a
+									>
+								</li>
+								<li>
+									<a href="/mortgage-calculator.html"
+										>MORTGAGE CALCULATOR</a
+									>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a
+								href=""
+								class="dropdown-toggle"
+								data-toggle="dropdown"
+								role="button"
+								aria-haspopup="true"
+								aria-expanded="false"
+								>SELLERS<span class="caret"></span
+							></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="/list-your-home.html"
+										>LIST YOUR HOUSE</a
+									>
+								</li>
+								<li>
+									<a href="/home-value.html"
+										>YOUR HOME'S VALUE</a
+									>
+								</li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a
+								href=""
+								class="dropdown-toggle"
+								data-toggle="dropdown"
+								role="button"
+								aria-haspopup="true"
+								aria-expanded="false"
+								>COMMUNITY<span class="caret"></span
+							></a>
+							<ul class="dropdown-menu">
+								<li><a href="/schools.html">SCHOOLS</a></li>
+								<li><a href="/walkscore.html">WALKSCORE</a></li>
+							</ul>
+						</li>
+
+						<li><a href="/about.html">ABOUT</a></li>
+						<li><a href="/contact.html">CONTACT</a></li>
+					</ul>
+				</div>
+				<!-- end of navbar-collapse -->
+			</div>
+			<!-- end of container-fluid -->
+		</nav>
+		<div class="main-body">
+			<div
+				id="home-banner"
+				class="parallax-window"
+				data-parallax="scroll"
+				data-image-src="img/slide-8.jpg"
+			>
+				<h1 id="bannerH1">Find your dream home</h1>
+			</div>
+
+			<div id="listhome" class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<h1>What is Your Ideal Dream Home?</h1>
+						<div
+							style="
+								height: 1px;
+								width: 100%;
+								background-color: #a0a0a0;
+								margin: 0px 0px 15px 0px;
+							"
+							class="divider"
+						></div>
+						<p>
+							I will analyze the data you provide and get back to
+							you with a range of properties matching your search
+							criteria. Please provide as much information as
+							possible to help me locate the perfect home for you.
+							All information you provide will be kept strictly
+							confidential.
+						</p>
+
+						<form action="" method="post">
+							<div class="form-group">
+								<label for="areainfo"
+									>What's your ideal area?</label
+								>
+								<textarea
+									class="form-control"
+									id="areainfo"
+									rows="3"
+									name="areainfo"
+									placeholder="Please list the towns, cities or areas that you are most interested in."
+								></textarea>
+							</div>
+
+							<div class="form-group">
+								<div class="row">
+									<div class="col-sm-6">
+										<label for="prop-type"
+											>Property Type</label
+										>
+										<select
+											class="form-control"
+											id="prop-type"
+											name="proptype"
+										>
+											<option value="Single Family House">
+												Single Family House
+											</option>
+											<option value="Condominium">
+												Condominium
+											</option>
+											<option
+												value="Multi-Unit Residential"
+											>
+												Multi-Unit Residential
+											</option>
+											<option value="Lots and Land">
+												Lots and Land
+											</option>
+											<option value="Mobile Home">
+												Mobile Home
+											</option>
+										</select>
+									</div>
+									<div class="col-sm-6">
+										<label for="timeframe"
+											>Time Frame</label
+										>
+										<select
+											class="form-control"
+											id="timeframe"
+											name="timeframe"
+										>
+											<option value="As Soon as possible">
+												As soon as possible
+											</option>
+											<option value="1 to 3 months">
+												1 to 3 months
+											</option>
+											<option value="3 to 6 months">
+												3 to 6 months
+											</option>
+											<option value="6 to 12 months">
+												6 to 12 months
+											</option>
+											<option value="Next year or later">
+												Next year or later
+											</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="row">
+									<div class="col-sm-6">
+										<label for="min"
+											>Min. Price range:</label
+										>
+										<div class="input-group">
+											<div class="input-group-addon">
+												$
+											</div>
+											<input
+												class="form-control"
+												type="text"
+												name="minprice"
+												id="min"
+												style="
+													color: #f6931f;
+													font-weight: bold;
+												"
+											/>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<label for="max"
+											>Max. Price range:</label
+										>
+										<div class="input-group">
+											<div class="input-group-addon">
+												$
+											</div>
+											<input
+												class="form-control"
+												type="text"
+												name="maxprice"
+												id="max"
+												style="
+													color: #f6931f;
+													font-weight: bold;
+												"
+											/>
+										</div>
+									</div>
+								</div>
+
+								<div
+									style="
+										margin-top: 25px;
+										margin-bottom: 25px;
+									"
+									id="slider-range"
+								></div>
+							</div>
+
+							<div class="form-group">
+								<div class="row">
+									<div class="col-sm-6">
+										<label for="bedrooms"
+											>Minimum Bedrooms</label
+										>
+										<select
+											class="form-control"
+											id="bedrooms"
+											name="bedrooms"
+										>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5 or more</option>
+										</select>
+									</div>
+									<div class="col-sm-6">
+										<label for="bathrooms"
+											>Minimum Bathrooms</label
+										>
+										<select
+											class="form-control"
+											id="bathrooms"
+											name="bathrooms"
+										>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5 or more</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="sqft"
+									>Minimum Square Feet Size</label
+								>
+								<input
+									type="text"
+									id="sqft"
+									class="form-control"
+									name="sqft"
+								/>
+							</div>
+
+							<div class="form-group">
+								<label for="moreinfo"
+									>Additional Information</label
+								>
+								<textarea
+									class="form-control"
+									id="moreinfo"
+									rows="3"
+									name="moreinfo"
+									placeholder="Please list additional information to help give a better understanding of the perfect home you are looking for. The more information you provide will help me to find a range of suitable properties."
+								></textarea>
+							</div>
+
+							<div class="linethru">
+								<span class="mHeader">
+									Contact Info
+									<!--Padding is optional-->
+								</span>
+							</div>
+
+							<div class="form-group">
+								<div class="row">
+									<div class="col-sm-6">
+										<label for="fname">First Name *</label>
+										<input
+											type="text"
+											class="form-control"
+											id="fname"
+											max-length="30"
+											name="fname"
+											required
+										/>
+									</div>
+									<div class="col-sm-6">
+										<label for="lname">Last Name</label>
+										<input
+											type="text"
+											class="form-control"
+											id="lname"
+											max-length="30"
+											name="lname"
+										/>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="row">
+									<div class="col-sm-6">
+										<label for="email">Email *</label>
+										<input
+											type="email"
+											class="form-control"
+											id="email"
+											name="email"
+											required
+										/>
+									</div>
+									<div class="col-sm-6">
+										<label for="email">Phone</label>
+										<input
+											type="tel"
+											class="form-control"
+											name="phone"
+										/>
+									</div>
+								</div>
+							</div>
+
+							<input
+								type="submit"
+								class="btn btn-default btn-lg"
+								name="submit"
+								value="submit"
+							/>
+						</form>
+					</div>
+					<div class="hidden-xs col-sm-3">
+						<div id="contactBox">
+							<img src="img/contactpic.jpg" alt="" />
+							<h3>Daniel Acevedo</h3>
+							<div
+								style="
+									height: 1px;
+									width: 75%;
+									background-color: white;
+									margin: -3px auto 0px auto;
+								"
+							></div>
+							<div
+								style="
+									height: 1px;
+									width: 55%;
+									background-color: white;
+									margin: 3px auto 0px auto;
+								"
+							></div>
+							<div
+								style="
+									height: 1px;
+									width: 25%;
+									background-color: white;
+									margin: 3px auto 0px auto;
+								"
+							></div>
+							<p>Ellie & Associates Realty</p>
+							<h4>813-965-2482</h4>
+							<a href="/contact.html">CONTACT</a>
+							<img src="img/mainlogo-white.gif" alt="" />
+						</div>
+					</div>
+				</div>
+				<!-- End of row -->
+			</div>
+			<!-- End of container -->
+
+			<div style="text-align: center" class="footer">
+				<div
+					style="
+						height: 1px;
+						width: 100%;
+						background-color: #a0a0a0;
+						margin: 0px 0px 25px 0px;
+					"
+					class="divider"
+				></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4">
+							<h1>Contact Daniel</h1>
+
+							<address>
+								<img
+									style="
+										margin-left: auto;
+										margin-right: auto;
+									"
+									class="img-responsive"
+									src="img/cooplogo.png"
+									alt="Cooperative Real Estate"
+								/>
+								16578 N Dale Mabry Hwy<br />
+								Tampa, FL 33618<br />
+								Mobile:
+								<a href="tel:+1-813-965-2482">(813) 965-2482</a
+								><br />
+								Office:
+								<a href="tel:+1-813-252-4326">(813) 252-4326</a
+								><br />
+								Email:
+								<a href="mailto:danieljacevedo94@gmail.com"
+									>DanieljAcevedo94@gmail.com</a
+								>
+							</address>
+						</div>
+						<div class="col-sm-4">
+							<h1>Featured Listing</h1>
+							<div
+								style="
+									width: 80%;
+									padding: 0px 0px 5px 0px;
+									margin-left: auto;
+									margin-right: auto;
+								"
+							>
+								<a href="/active-listings.html"
+									><img
+										style="width: 100%; height: auto"
+										src="img/activelistings/res_1/1.jpg"
+										alt="featured listing"
+								/></a>
+								<p style="font-weight: bold">$467,900</p>
+								<p>2514 WITHY CT, TAMPA, FL 33618</p>
+								<p>
+									Beds: 4 | Baths: 2 | Partial Baths: 1 |
+									SQFT: 3,784
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="bottomfooter">
+								<img src="img/mainlogo-colored.png" alt="" />
+								<p>Copyright © 2016 Daniel Acevedo</p>
+								<p>Site by Tony V.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.js" type="text/javascript"></script>
+		<script
+			src="js/parallax/parallax.min.js"
+			type="text/javascript"
+		></script>
+		<script>
+			$(function () {
+				$('#slider-range').slider({
+					animate: 'slow',
+					range: true,
+					min: 0,
+					max: 10000000,
+					step: 50000,
+					values: [250000, 750000],
+					slide: function (event, ui) {
+						$('#min').val(ui.values[0])
+						$('#max').val(ui.values[1])
+					},
+				})
+				$('#min').val($('#slider-range').slider('values', 0))
+				$('#max').val($('#slider-range').slider('values', 1))
+			})
+			$('#min').keyup(function () {
+				var value = this.value
+				$('#slider-range').slider('values', 0, parseInt(value))
+			})
+			$('#max').keyup(function () {
+				var value = this.value
+				$('#slider-range').slider('values', 1, parseInt(value))
+			})
+		</script>
+	</body>
+</html>

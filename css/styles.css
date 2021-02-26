@@ -1,0 +1,368 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* Color Pallette */
+/*************************************/
+/*** NAVBAR COLOR SWITCH ANIMATION ***/
+@keyframes white-bg {
+  from {
+    background-color: transparent; }
+  to {
+    background-color: white; } }
+@keyframes dark-bg {
+  from {
+    background-color: white; }
+  to {
+    background-color: transparent; } }
+.whiteBG {
+  animation-name: white-bg;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards; }
+
+.darkBG {
+  animation-name: dark-bg;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards; }
+
+.underlineLinkColor-white a:before {
+  background-color: white !important; }
+
+.underlineLinkColor-black a:before {
+  background-color: black !important; }
+
+/* DEFAULT p Size (Mobile) */
+p {
+  font-family: 'Questrial', sans-serif;
+  font-size: 16px; }
+
+/*****************************/
+/*** TOP BANNER SLIDE SHOW ***/
+.slider-outer {
+  height: 250px;
+  width: 100%;
+  overflow: hidden; }
+
+.slider-inner {
+  position: relative;
+  width: 600%;
+  /*500% = 5 slides*/
+  padding: 0px; }
+
+.slide {
+  position: relative;
+  height: 250px;
+  width: 16.666%;
+  display: inline-block;
+  margin-right: -4px; }
+
+.home-banner {
+  height: inherit;
+  position: relative; }
+
+#bannerLogo {
+  display: none;
+  position: absolute;
+  height: auto;
+  width: 290px;
+  top: 60px;
+  left: 50%;
+  margin-left: -155px;
+  z-index: 999; }
+
+#bannerPhrase {
+  font-family: 'Lobster Two', cursive;
+  font-size: 25px;
+  position: absolute;
+  display: none;
+  top: 165px;
+  color: white;
+  left: 0px;
+  right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: -3px 2px 2px black;
+  text-align: center;
+  z-index: 999; }
+
+/*****************************/
+/******* BOTTOM FOOTER *******/
+.footer {
+  background-color: #EFEFEF; }
+  .footer h1 {
+    font-family: 'Questrial', sans-serif; }
+  .footer .container {
+    padding-bottom: 50px; }
+
+.bottomfooter {
+  padding-top: 50px;
+  padding-bottom: 15px;
+  text-align: center; }
+  .bottomfooter img {
+    height: auto;
+    width: 90%; }
+
+/******************************/
+/***** QUICK LINX SECTION *****/
+.catalog {
+  text-align: center;
+  width: 100%; }
+  .catalog h1 {
+    font-family: 'Questrial', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 27px; }
+  .catalog .cBox {
+    overflow: hidden;
+    margin-top: 25px;
+    width: 100%;
+    height: 62%;
+    position: relative; }
+  .catalog img {
+    max-width: 100%;
+    height: auto;
+    -moz-transition: all 0.7s;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s; }
+  .catalog img:hover {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
+
+/**************************/
+/********* NAVBAR *********/
+nav button {
+  color: white; }
+nav div > div > a > img {
+  height: 60px;
+  width: auto;
+  margin-left: 36px; }
+nav .navbar-toggle {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+nav div > .navbar-header {
+  text-align: center; }
+nav #navlist {
+  background-color: #0A2340; }
+  nav #navlist .dropdown-menu {
+    background-color: #0A2340;
+    padding: 0;
+    min-width: 130px; }
+    nav #navlist .dropdown-menu li > a {
+      color: white;
+      position: relative;
+      margin-bottom: 10px !important;
+      padding-bottom: 2px !important;
+      margin-top: 3px !important; }
+nav div > div > ul {
+  font-size: 15px; }
+  nav div > div > ul li {
+    text-align: center; }
+  nav div > div > ul a {
+    background-color: transparent !important;
+    display: inline-block !important;
+    color: white;
+    border-color: black;
+    border-left: 1px;
+    border-right: 1px;
+    padding: 0px 0px 4px 0px !important;
+    font-family: 'Fjalla One', sans-serif;
+    margin: 4px 15px !important;
+    position: absolute;
+    top: 4px;
+    text-align: center;
+    text-decoration: none; }
+  nav div > div > ul a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0px;
+    visibility: hidden;
+    background-color: white;
+    -webkit-transform: translate(0px, 5px);
+    transform: translate(0px, 5px);
+    -webkit-transition: all 0.15s ease-in-out 0s;
+    transition: all 0.15s ease-in-out 0s; }
+  nav div > div > ul a:hover:before {
+    visibility: visible;
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px); }
+  nav div > div > ul li > a:focus, nav div > div > ul li > a:hover {
+    color: white;
+    background-color: transparent !important; }
+
+#greeting h1 {
+  font-family: 'Questrial', sans-serif;
+  text-align: center; }
+#greeting p {
+  font-family: 'Questrial', sans-serif;
+  text-align: left;
+  font-size: 18px; }
+
+#test-sec h1, #test-sec h3 {
+  color: white;
+  font-family: 'Questrial', sans-serif;
+  text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.5); }
+#test-sec h1 {
+  position: relative;
+  top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+#test-sec .quotebox {
+  font-size: 18px;
+  position: relative;
+  top: 35px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+
+#meetme {
+  background-color: white; }
+  #meetme .linethru {
+    width: 100%;
+    height: 18px;
+    border-bottom: 3px solid #0A2340;
+    text-align: center; }
+  #meetme .mHeader {
+    z-index: 100;
+    background-color: white;
+    text-align: center;
+    margin-bottom: -3px;
+    margin-top: 30px;
+    color: #0a2442;
+    font-size: 25px;
+    padding: 0 10px; }
+  #meetme p {
+    position: relative;
+    top: 40px;
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 100px; }
+  #meetme a {
+    position: relative;
+    top: -40px;
+    font-size: 17px;
+    background-color: #316fb7;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none; }
+  #meetme a:hover {
+    background-color: #0A2340; }
+  #meetme #meetmepic {
+    width: auto;
+    height: 400px;
+    margin-bottom: 20px; }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  nav div > div > a > img {
+    height: 80px;
+    margin-left: 0; }
+  nav #navlist {
+    background-color: transparent;
+    max-height: none; }
+  nav div > div > ul {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+    background-color: transparent; }
+    nav div > div > ul a {
+      margin: 15px 5px !important; }
+
+  .slider-outer {
+    height: 450px; }
+
+  .slide {
+    position: relative;
+    height: 450px;
+    display: inline-block;
+    margin-right: -4px; }
+
+  #bannerLogo {
+    display: none;
+    height: auto;
+    width: 450px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -225px; }
+
+  #bannerPhrase {
+    font-size: 40px;
+    top: 300px;
+    display: none;
+    text-align: center;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .banner-ss {
+    height: 100vh;
+    width: 100%;
+    border: 1px solid; }
+
+  #greeting {
+    margin: 15px auto 15px auto; }
+    #greeting h1 {
+      font-family: 'Questrial', sans-serif;
+      font-size: 50px;
+      text-align: left; }
+
+  #test-sec h1, #test-sec h3 {
+    color: white;
+    font-family: 'Questrial', sans-serif; }
+  #test-sec h1 {
+    position: relative;
+    top: 95px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+  #test-sec .quotebox {
+    position: relative;
+    top: 105px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+
+  #meetme .linethru {
+    margin-top: 25px;
+    height: 29px; }
+  #meetme .mHeader {
+    z-index: 100;
+    background-color: white;
+    text-align: center;
+    margin-bottom: -3px;
+    margin-top: 30px;
+    color: #0a2442;
+    font-size: 40px;
+    padding: 0 10px; }
+  #meetme p {
+    position: relative;
+    top: 40px;
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 100px; }
+  #meetme a {
+    position: relative;
+    top: -40px;
+    font-size: 17px;
+    background-color: #316fb7;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none; }
+  #meetme a:hover {
+    background-color: #0A2340; }
+  #meetme #meetmepic {
+    width: auto;
+    height: 400px;
+    margin-bottom: 20px; } }
+@media (min-width: 992px) {
+  nav div > div > ul {
+    font-size: 18px; }
+    nav div > div > ul a {
+      margin: 15px 13px !important; } }
+
+/*# sourceMappingURL=styles.css.map */
